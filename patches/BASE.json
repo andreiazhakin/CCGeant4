@@ -1,0 +1,263 @@
+{
+  "base": "Geant4 11.4.0",
+  "base_url": "https://gitlab.cern.ch/geant4/geant4/-/tree/v11.4.0",
+  "normalization": "Patch uses LF; source_changes preserves original bytes.",
+  "files": [
+    {
+      "path": "source/physics_lists/constructors/electromagnetic/include/G4EmStandardPhysics_option4_CurrentCharge.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/constructors/electromagnetic/include/G4EmStandardPhysics_option4_CurrentCharge_TabulatedSS.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/constructors/electromagnetic/sources.cmake",
+      "status": "modified"
+    },
+    {
+      "path": "source/physics_lists/constructors/electromagnetic/src/G4EmStandardPhysics_option4_CurrentCharge.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/constructors/electromagnetic/src/G4EmStandardPhysics_option4_CurrentCharge_TabulatedSS.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/lists/include/FTFP_BERT_CurrentChargeEmOpt4.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/lists/include/FTFP_BERT_CurrentChargeEmOpt4_TabulatedSS.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/lists/include/G4RegisterPhysLists.icc",
+      "status": "modified"
+    },
+    {
+      "path": "source/physics_lists/lists/sources.cmake",
+      "status": "modified"
+    },
+    {
+      "path": "source/physics_lists/lists/src/FTFP_BERT_CurrentChargeEmOpt4.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/lists/src/FTFP_BERT_CurrentChargeEmOpt4_TabulatedSS.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/physics_lists/lists/src/G4PhysListFactory.cc",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCAtimaEquilibriumDedxTable.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCAtimaQDedxTable.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCBetheBlochModel.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCBindingEnergyProvider.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCBraggIonModel.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCCurrentChargeConfig.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCDiracPhysics.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCDiracTable.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCElasticTableData.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCGlobalChargeExchangeTable.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCIonChargeExchangeProcess.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCIonChargeState.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCIonDeltaElectronProcess.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCIonIonisation.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCLindhardSorensenIonModel.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCMixedFluctuations.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCMottCorrection.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCNonEMChargeResetProcess.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCNuclearStopping.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCPhysicsOptions.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCScreening.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCTabulatedIonScattering.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/include/G4CCTabulatedIonScatteringModel.hh",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/sources.cmake",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCAtimaEquilibriumDedxTable.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCAtimaQDedxTable.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCBetheBlochModel.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCBindingEnergyProvider.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCBraggIonModel.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCCurrentChargeConfig.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCDiracPhysics.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCDiracTable.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCElasticTableData.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCGlobalChargeExchangeTable.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCIonChargeExchangeProcess.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCIonChargeState.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCIonDeltaElectronProcess.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCIonIonisation.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCLindhardSorensenIonModel.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCMixedFluctuations.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCMottCorrection.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCNonEMChargeResetProcess.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCNuclearStopping.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCScreening.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCTabulatedIonScattering.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4CCTabulatedIonScatteringModel.cc",
+      "status": "added"
+    },
+    {
+      "path": "source/processes/electromagnetic/standard/src/G4UrbanMscModel.cc",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/electromagnetic/utils/include/G4VEnergyLossProcess.hh",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/electromagnetic/utils/src/G4EmCalculator.cc",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/hadronic/management/include/G4HadronicProcess.hh",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/hadronic/management/src/G4HadronicProcess.cc",
+      "status": "modified"
+    },
+    {
+      "path": "source/processes/management/include/G4VProcess.hh",
+      "status": "modified"
+    }
+  ]
+}

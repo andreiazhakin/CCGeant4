@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "When using CCGeant4, cite this repository and identify the commit used. Please also cite the physics methods listed in LICENSING.md."
+title: "CCGeant4: charge-state-resolved heavy-ion transport in Geant4"
+type: software
+repository-code: "https://github.com/andreiazhakin/CCGeant4"
+authors:
+  - family-names: Azhakin
+    given-names: Andrei
+    affiliation: Faculty of Physics, Lomonosov Moscow State University
+    email: azhakin.am21@physics.msu.ru
+abstract: >-
+  Heavy-ion charge-state transport using GLOBAL transition cross sections,
+  ATIMA equilibrium stopping and frozen-shell Dirac electron spectra.

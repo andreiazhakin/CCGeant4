@@ -1,0 +1,16 @@
+sample,model,scattering,Z,A,initial_charge,energy_MeV_u,material,thickness_um,cut_um,events,threads,seed,energy_core_sigma
+dirac_cu,dirac,msc,29,63,29,400,G4_Si,100,25,100000,8,6111401,0
+dirac_xe,dirac,msc,54,124,54,400,G4_Si,100,25,100000,8,6111401,0
+dirac_u,dirac,msc,92,238,92,400,G4_Si,100,25,100000,8,6111401,0
+dirac_ss_native,dirac,ss,29,63,29,200,G4_Si,100,25,100000,8,6111401,3
+dirac_ss_cu,dirac,tabulated_ss,29,63,29,200,G4_Si,100,25,100000,8,6111401,3
+dirac_fe_ss,dirac,tabulated_ss,26,56,26,200,G4_Si,100,25,100000,8,6111401,0
+legacy_cu,legacy,msc,29,63,29,400,G4_Si,100,25,100000,8,6111401,0
+legacy_xe,legacy,msc,54,124,54,400,G4_Si,100,25,100000,8,6111401,0
+legacy_u,legacy,msc,92,238,92,400,G4_Si,100,25,100000,8,6111401,0
+legacy_ss_native,legacy,ss,29,63,29,200,G4_Si,100,25,100000,8,6111401,3
+legacy_ss_cu,legacy,tabulated_ss,29,63,29,200,G4_Si,100,25,100000,8,6111401,3
+legacy_fe_ss,legacy,tabulated_ss,26,56,26,200,G4_Si,100,25,100000,8,6111401,0
+emopt4_cu,emopt4,msc,29,63,29,400,G4_Si,100,25,100000,8,6111401,0
+emopt4_xe,emopt4,msc,54,124,54,400,G4_Si,100,25,100000,8,6111401,0
+emopt4_u,emopt4,msc,92,238,92,400,G4_Si,100,25,100000,8,6111401,0

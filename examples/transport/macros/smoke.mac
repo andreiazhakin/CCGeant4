@@ -1,0 +1,11 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/example/detector/material G4_Si
+/example/detector/thickness 100 um
+/run/initialize
+/gun/particle ion
+/gun/ion 29 63 29
+/gun/energy 25200 MeV
+/run/beamOn 100

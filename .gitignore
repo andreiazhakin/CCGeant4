@@ -1,0 +1,16 @@
+/build*/
+**/__pycache__/
+*.pyc
+*.obj
+*.o
+*.dll
+*.exe
+*.so
+*.dylib
+**/CMakeCache.txt
+**/CMakeFiles/
+/results*/
+/runtime/
+/runtime-tables/
+/packs/
+/DATA/
