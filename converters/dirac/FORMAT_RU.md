@@ -120,7 +120,7 @@ version=1, kind (1=delta, 2=global, 3=stopping), Zp, число массивов
 Таблица [`legacy_q2.csv`](../../data/legacy_q2.csv) содержит поля
 `Zp,Zt,E_MeV_u,ATIMA_dEdx_eq_MeV_cm2_g,q_rms_eq,q2_eq,status`.
 Legacy использует её для расчёта торможения при текущем заряде иона
-([подключение](../../README.md#legacy-charge-scaled-stopping)).
+([подключение](../../README.md#connect-legacy)).
 Низкоэнергетический CSV действующего fallback содержит
 `Zp,Zt,At_ref_g_mol,E_MeV_u,dEdx_MeV_cm2_g,dEdx_left_MeV_cm2_g` (последнее — левый предел).
 Поле `At_ref_g_mol` берётся из заголовка исходного сплайна ATIMA.
@@ -135,12 +135,9 @@ CDF безразмерна. Это отдельная физика рассея�
 
 ```text
 python convert.py --dirac DIRAC.zip --global-csv GLOBAL.csv --atima-splines splines_gz_1.41.tar --output prepared
-python validate.py --tables prepared --raw-dirac DIRAC.zip --raw-atima splines_gz_1.41.tar --raw-global GLOBAL.csv --output validation.json
-python example_read.py --tables prepared --Z 54 --target-Z 14 --N 0 1 15 27
+python export_dirac_csv.py --source prepared --output runtime
 ```
 
 Параметры `--z-min`, `--z-max` выбирают поддиапазон снарядов;
 `--normalization-tolerance` задаёт допуск нормировки (по умолчанию 10⁻⁴).
-`--resume` проверяет конфигурацию и сравнивает ранее сохранённые массивы с пересчитанными. Валидатор проверяет
-бинарную структуру, исходные спектры, интегралы независимой квадратурой,
-нормировку на узлах и между ними, а также отклонение повреждённых файлов.
+`--resume` проверяет конфигурацию и сравнивает ранее сохранённые массивы с пересчитанными.

@@ -59,14 +59,18 @@ PhysicsList::PhysicsList(const std::string& mode, const std::string& scattering,
 
   if (mode == "dirac") {
     G4CCPhysicsOptions cc;
-    cc.tables.delta = (directory / "delta").string();
-    cc.tables.stopping = (directory / "stopping").string();
-    cc.tables.global = (directory / "global.csv").string();
-    cc.tables.atimaLow = (directory / "atima_low.csv").string();
+    cc.tables.delta = (directory / "delta").string();           // Electron spectra.
+    cc.tables.stopping = (directory / "stopping").string();     // Stopping tables.
+    cc.tables.global = (directory / "global.csv").string();     // Capture and loss.
+    cc.tables.atimaLow = (directory / "atima_low.csv").string(); // Low-energy stopping.
     cc.scattering.mode = scatteringMode;
     cc.scattering.tables = elastic;
+    // Alternatives to the --scattering choice:
+    // cc.scattering.mode = G4CCScatteringMode::NativeSingleScattering;
+    // cc.scattering.mode = G4CCScatteringMode::TabulatedSingleScattering;
     RegisterPhysics(new G4EmStandardPhysics_option4_CurrentCharge(cc, 0));
   } else if (mode == "legacy") {
+    // The constructor without cc selects Legacy.
     SetEnvironment("G4CC_GLOBAL_TABLE", (directory / "global.csv").string());
     SetEnvironment("G4CC_ATIMA_Q_DEDX_TABLE", (directory / "legacy_q2.csv").string());
     SetEnvironment("G4CC_ATIMA_EQUILIBRIUM_DEDX_TABLE", (directory / "atima_low.csv").string());
